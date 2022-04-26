@@ -59,11 +59,11 @@ If this lib is helpful, you can donate me to buy a cup of coffee.
 
 ## Alipay
 
-<img src="https://cdn.jsdelivr.net/gh/terwer/upload/img/alipay.jpg" alt="alipay" style="zoom:25%;" />
+<img src="https://cdn.jsdelivr.net/gh/terwer/upload/img/alipay.jpg" alt="alipay" style="width:280px;height:375px;" />
 
 ## Wechat
 
-<img src="https://cdn.jsdelivr.net/gh/terwer/upload/img/wechat.jpg" alt="wechat" style="zoom:25%;" />
+<img src="https://cdn.jsdelivr.net/gh/terwer/upload/img/wechat.jpg" alt="wechat" style="width:280px;height:375px;" />
 
 # Thanks
 

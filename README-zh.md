@@ -29,9 +29,9 @@ converter.convert();
 
 开始使用吧！
 
-# 文档
+# doc
 
-[中文文档](doc/README-zh.md)
+[文档](doc)
 
 # 开发计划
 
@@ -57,11 +57,11 @@ converter.convert();
 
 ## 支付宝
 
-<img src="https://cdn.jsdelivr.net/gh/terwer/upload/img/alipay.jpg" alt="alipay" style="zoom:25%;" />
+<img src="https://cdn.jsdelivr.net/gh/terwer/upload/img/alipay.jpg" alt="alipay" style="width:280px;height:375px;" />
 
 ## 微信
 
-<img src="https://cdn.jsdelivr.net/gh/terwer/upload/img/wechat.jpg" alt="wechat" style="zoom:25%;" />
+<img src="https://cdn.jsdelivr.net/gh/terwer/upload/img/wechat.jpg" alt="wechat" style="width:280px;height:375px;" />
 
 # 感谢
 
@@ -79,6 +79,6 @@ converter.convert();
 
 作者: terwer
 
-作者邮箱: [youweics@163.com](mailto:youweics@163.com)
+邮箱: [youweics@163.com](mailto:youweics@163.com)
 
 作者博客: [http://terwergreeen.com](http://terwergreeen.com)
