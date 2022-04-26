@@ -2,12 +2,28 @@
 
 a simply way of converting from html to docx.
 
+**！！！NOTICE！！！**
+
+**This project is not finished yet, a first worked release may at 2022-5-20** ❤️ 
+
 # quick start
+
+Include lib to you `pom.xml`
+
+```xml
+<dependency>
+    <groupId>com.terwergreen.lib</groupId>
+    <artifactId>html-to-docx</artifactId>
+    <version>1.0.0</version>
+</dependency>
+```
+
+Then, write a simple code here
 
 ```java
 String html = "<html><body><h1>Hello World</h1></body></html>";
 String outpath = "/Users/terwer/Downloads/test.docx";
-HtmlConverter converter = new HtmlConverter("<html><body><h1>Hello World</h1></body></html>", outpath);
+HtmlConverter converter = new HtmlConverter(html, outpath);
 converter.convert();
 ```
 
@@ -16,6 +32,51 @@ have fun!
 # doc
 
 [doc](doc)
+
+# todo
+
+* [ ]  Simple converter for text only
+* [ ]  Picture extracting
+* [ ]  Hyperlinks processing
+* [ ]  uls and ols parsing
+* [ ]  Headings form h1 to h6 processing
+* [ ]  Single table processing
+* [ ]  Multi table processing
+* [ ]  hr, strong, br rtc
+* [ ]  code blocks, qoutes
+* [ ]  fetch url with http/https as html input
+* [ ]  chart support
+
+# Contribute
+
+contribute is welcome, please open a issue or email to youweics@163.com
+
+# Donate
+
+If this lib is helpful, you can donate me to buy a cup of coffee.
+
+## Alipay
+
+![](https://static-rs-terwer.oss-cn-beijing.aliyuncs.com/donate/alipay.jpg)
+
+
+## Wechat
+
+![](https://static-rs-terwer.oss-cn-beijing.aliyuncs.com/donate/wechat.jpg)
+
+![]()
+
+# Thanks
+
+thanks third party libs to help making this lib work
+
+
+| Name              | version | vendor |
+| ------------------- | --------- | -------- |
+| jdk               | 1.8+    | Oracle |
+| poi               | 4.0+    | apache |
+| commons-lang      | 3.0     | apache |
+| commons-colltions | 4.0     | apache |
 
 # Contact me
 
