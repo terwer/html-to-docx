@@ -2,7 +2,7 @@
 
 a simply way for converting from html to docx.
 
-[中文说明](README-zh.md)
+[中文说明](README-zh.md) | [Gitee码云仓库](https://gitee.com/youweics/html-to-docx)
 
 **！！！NOTICE！！！**
 
