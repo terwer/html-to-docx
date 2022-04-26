@@ -83,4 +83,4 @@ converter.convert();
 
 邮箱: [youweics@163.com](mailto:youweics@163.com)
 
-作者博客: [http://terwergreeen.com](http://terwergreeen.com)
+博客: [http://terwergreeen.com](http://terwergreeen.com)
