@@ -57,14 +57,11 @@ If this lib is helpful, you can donate me to buy a cup of coffee.
 
 ## Alipay
 
-![](https://static-rs-terwer.oss-cn-beijing.aliyuncs.com/donate/alipay.jpg)
-
+<img src="https://cdn.jsdelivr.net/gh/terwer/upload/img/alipay.jpg" alt="alipay" style="zoom:25%;" />
 
 ## Wechat
 
-![](https://static-rs-terwer.oss-cn-beijing.aliyuncs.com/donate/wechat.jpg)
-
-![]()
+<img src="https://cdn.jsdelivr.net/gh/terwer/upload/img/wechat.jpg" alt="wechat" style="zoom:25%;" />
 
 # Thanks
 
