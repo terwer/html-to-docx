@@ -1,6 +1,6 @@
 # html-to-docx
 
-a simply way of converting from html to docx.
+a simply way for converting from html to docx.
 
 [中文说明](README-zh.md)
 
