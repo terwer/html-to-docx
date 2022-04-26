@@ -2,9 +2,11 @@
 
 a simply way of converting from html to docx.
 
+[中文说明](README-zh.md)
+
 **！！！NOTICE！！！**
 
-**This project is not finished yet, a first worked release may at 2022-5-20** ❤️ 
+**This project is not finished yet, a first worked release may at 2022-5-20** ❤️
 
 # quick start
 

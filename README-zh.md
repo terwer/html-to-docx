@@ -29,9 +29,9 @@ converter.convert();
 
 开始使用吧！
 
-# doc
+# 文档
 
-[文档](doc)
+[中文文档](doc/README-zh.md)
 
 # 开发计划
 
