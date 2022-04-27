@@ -85,7 +85,7 @@ have fun!
 
 # todo
 
-* [ ]  Simple converter for text only
+* [X]  Simple converter for text only
 * [ ]  Picture extracting
 * [ ]  Hyperlinks processing
 * [ ]  uls and ols parsing
@@ -122,8 +122,9 @@ thanks third party libs to help making this lib work
 | ------------------- | --------- | -------- |
 | jdk               | 1.8+    | Oracle |
 | poi               | 4.0+    | apache |
-| commons-lang      | 3.0     | apache |
-| commons-colltions | 4.0     | apache |
+| jsoup             | 1.14.3  | jsoup  |
+| commons-lang3     | 3.12.0  | apache |
+| commons-colltions | 4.2     | apache |
 
 # Contact me
 

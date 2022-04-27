@@ -1,4 +1,4 @@
-# html-to-docx
+****# html-to-docx
 
 一个简单方式实现html转docx。
 
@@ -83,7 +83,7 @@ public class Main {
 
 # 开发计划
 
-* [ ]  简单的文本转换
+* [X]  简单的文本转换
 * [ ]  图片提取
 * [ ]  超链接处理
 * [ ]  解析有序列表和无序列表
@@ -116,12 +116,13 @@ public class Main {
 感谢第三方框架对本项目底层的支持
 
 
-| Name              | version | vendor |
-| ------------------- | --------- | -------- |
-| jdk               | 1.8+    | Oracle |
-| poi               | 4.0+    | apache |
-| commons-lang      | 3.0     | apache |
-| commons-colltions | 4.0     | apache |
+| Name              | version | vendor          |
+| ------------------- | --------- | ----------------- |
+| jdk               | 1.8+    | Oracle          |
+| poi               | 4.0+    | apache          |
+| jsoup             | 1.14.3  | Jonathan Hedley |
+| commons-lang3     | 3.12.0  | apache          |
+| commons-colltions | 4.2     | apache          |
 
 联系我
 
