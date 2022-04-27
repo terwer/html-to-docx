@@ -1,6 +1,6 @@
-package com.terwergreen.lib;
+package com.terwergreen.lib.converter;
 
-import com.terwergreen.lib.converter.HtmlConverter;
+import com.terwergreen.lib.HtmlConverterUtilTest;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -12,10 +12,10 @@ import java.io.File;
 import static org.junit.Assert.*;
 
 /**
- * Unit test for HtmlConverterUtil
+ * Unit test for HtmlConverter
  */
-public class HtmlConverterUtilTest {
-    private static final Logger logger = LoggerFactory.getLogger(HtmlConverterUtilTest.class);
+public class HtmlConverterTest {
+    private static final Logger logger = LoggerFactory.getLogger(HtmlConverterTest.class);
 
     private static final String HTML = "<html><body><h1>Hello World</h1></body></html>";
     // change it to your own path
@@ -31,8 +31,9 @@ public class HtmlConverterUtilTest {
     }
 
     @Test
-    public void convert() {
-        HtmlConverterUtil.convert(HTML, OUTPATH);
+    public void doConvert() {
+        HtmlConverter converter = new HtmlConverter(HTML, OUTPATH);
+        converter.doConvert();
         Assert.assertTrue(new File(OUTPATH).exists());
     }
 }
