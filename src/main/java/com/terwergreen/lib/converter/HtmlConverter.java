@@ -1,5 +1,8 @@
 package com.terwergreen.lib.converter;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 /**
  * HTML converter
  *
@@ -8,6 +11,8 @@ package com.terwergreen.lib.converter;
  * @date: 2022-04-27 10:08
  **/
 public class HtmlConverter {
+    private static final Logger logger = LoggerFactory.getLogger(HtmlConverter.class);
+
     private String htmlString;
     private String absolutePath;
 
@@ -58,7 +63,7 @@ public class HtmlConverter {
      * the really doing of converting work
      */
     public void doConvert() {
-        System.out.println("htmlString = " + htmlString);
-        System.out.println("absolutePath = " + absolutePath);
+        logger.info("htmlString = " + htmlString);
+        logger.info("absolutePath = " + absolutePath);
     }
 }
