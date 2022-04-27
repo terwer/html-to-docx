@@ -42,7 +42,6 @@ or more shorter
 
 ```java
 import com.terwergreen.lib.HtmlConverterUtil;
-import com.terwergreen.lib.converter.HtmlConverter;
 
 public class Main {
     public static void main(String[] args) {
@@ -67,7 +66,6 @@ to see the result
 
 ```java
 import com.terwergreen.lib.HtmlConverterUtil;
-import com.terwergreen.lib.converter.HtmlConverter;
 
 public class Main {
     public static void main(String[] args) {

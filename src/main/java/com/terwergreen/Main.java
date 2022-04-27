@@ -1,7 +1,6 @@
 package com.terwergreen;
 
 import com.terwergreen.lib.HtmlConverterUtil;
-import com.terwergreen.lib.converter.HtmlConverter;
 
 public class Main {
     public static void main(String[] args) {
