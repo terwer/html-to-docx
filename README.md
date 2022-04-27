@@ -22,11 +22,61 @@ Include lib to you `pom.xml`
 
 Then, write a simple code here
 
+## linux/macOS
+
 ```java
-String html = "<html><body><h1>Hello World</h1></body></html>";
-String outpath = "/Users/terwer/Downloads/test.docx";
-HtmlConverter converter = new HtmlConverter(html, outpath);
-converter.convert();
+import com.terwergreen.lib.converter.HtmlConverter;
+
+public class Main {
+    public static void main(String[] args) {
+        String html = "<html><body><h1>Hello World</h1></body></html>";
+        // change it to your own path
+        String outpath = "/opt/tmp/test.docx";
+        HtmlConverter converter = new HtmlConverter(html, outpath);
+        converter.doConvert();
+    }
+}
+```
+
+or more shorter
+
+```java
+import com.terwergreen.lib.HtmlConverterUtil;
+import com.terwergreen.lib.converter.HtmlConverter;
+
+public class Main {
+    public static void main(String[] args) {
+        String html = "<html><body><h1>Hello World</h1></body></html>";
+        // change it to your own path
+        String outpath = "/opt/tmp/test.docx";
+        HtmlConverterUtil.convert(html, outpath);
+    }
+}
+```
+
+now open termimel, type
+
+```bash
+cd /opt/tmp
+open .
+```
+
+to see the result
+
+## windows
+
+```java
+import com.terwergreen.lib.HtmlConverterUtil;
+import com.terwergreen.lib.converter.HtmlConverter;
+
+public class Main {
+    public static void main(String[] args) {
+        String html = "<html><body><h1>Hello World</h1></body></html>";
+        // change it to your own path
+        String outpath = "C:/test.docx";
+        HtmlConverterUtil.convert(html, outpath);
+    }
+}
 ```
 
 have fun!

@@ -22,11 +22,59 @@
 
 然后，添加下面简单的的测试代码即可
 
+## linux/macOS
+
 ```java
-String html = "<html><body><h1>Hello World</h1></body></html>";
-String outpath = "/Users/terwer/Downloads/test.docx";
-HtmlConverter converter = new HtmlConverter(html, outpath);
-converter.convert();
+import com.terwergreen.lib.converter.HtmlConverter;
+
+public class Main {
+    public static void main(String[] args) {
+        String html = "<html><body><h1>Hello World</h1></body></html>";
+        // change it to your own path
+        String outpath = "/opt/tmp/test.docx";
+        HtmlConverter converter = new HtmlConverter(html, outpath);
+        converter.doConvert();
+    }
+}
+```
+
+或者更简单的代码
+
+```java
+import com.terwergreen.lib.HtmlConverterUtil;
+import com.terwergreen.lib.converter.HtmlConverter;
+
+public class Main {
+    public static void main(String[] args) {
+        String html = "<html><body><h1>Hello World</h1></body></html>";
+        // change it to your own path
+        String outpath = "/opt/tmp/test.docx";
+        HtmlConverterUtil.convert(html, outpath);
+    }
+}
+```
+
+现在，打开终端输入命令，查看转换结果吧
+
+```bash
+cd /opt/tmp
+open .
+```
+
+## windows
+
+```java
+import com.terwergreen.lib.HtmlConverterUtil;
+import com.terwergreen.lib.converter.HtmlConverter;
+
+public class Main {
+    public static void main(String[] args) {
+        String html = "<html><body><h1>Hello World</h1></body></html>";
+        // change it to your own path
+        String outpath = "C:/test.docx";
+        HtmlConverterUtil.convert(html, outpath);
+    }
+}
 ```
 
 开始使用吧！
