@@ -1,6 +1,6 @@
 package com.terwergreen.lib.converter;
 
-import com.terwergreen.lib.parser.HTMLParser;
+import com.terwergreen.lib.parser.HtmlParser;
 import org.apache.poi.util.IOUtils;
 import org.apache.poi.xwpf.usermodel.XWPFDocument;
 import org.jsoup.Jsoup;
@@ -22,7 +22,7 @@ import java.io.OutputStream;
  **/
 public class HtmlConverter {
     private static final Logger logger = LoggerFactory.getLogger(HtmlConverter.class);
-    private static final HTMLParser htmlParser;
+    private static final HtmlParser HTML_PARSER;
 
     private String htmlString;
     private String absolutePath;
@@ -31,7 +31,7 @@ public class HtmlConverter {
         /**
          * parser init
          */
-        htmlParser = new HTMLParser();
+        HTML_PARSER = new HtmlParser();
     }
 
     /**
@@ -93,7 +93,7 @@ public class HtmlConverter {
             htmlDocument = Jsoup.parse(is, "UTF-8", "");
 
             // Parse and generate docx document
-            htmlParser.parse(doc, htmlDocument);
+            HTML_PARSER.parse(doc, htmlDocument);
 
             // Write to ouput stream, and save to file
             os = new FileOutputStream(absolutePath);

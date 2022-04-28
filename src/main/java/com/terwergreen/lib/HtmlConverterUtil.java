@@ -10,13 +10,11 @@ import com.terwergreen.lib.converter.HtmlConverter;
  * @date: 2022-04-27 10:00
  **/
 public class HtmlConverterUtil {
-    private static final HtmlConverter converter;
+    private static final HtmlConverter HTML_CONVERTER;
 
     static {
-        /**
-         * init converter only once
-         */
-        converter = new HtmlConverter();
+        // init converter only once
+        HTML_CONVERTER = new HtmlConverter();
     }
 
     /**
@@ -26,8 +24,8 @@ public class HtmlConverterUtil {
      * @param absolutePath absolute path in your system, eg:windows starts with "C:/" or "D:/",linux/macOS start with "/"
      */
     public static void convert(String htmlString, String absolutePath) {
-        converter.setHtmlString(htmlString);
-        converter.setAbsolutePath(absolutePath);
-        converter.doConvert();
+        HTML_CONVERTER.setHtmlString(htmlString);
+        HTML_CONVERTER.setAbsolutePath(absolutePath);
+        HTML_CONVERTER.doConvert();
     }
 }
