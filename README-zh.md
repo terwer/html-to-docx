@@ -1,4 +1,4 @@
-****# html-to-docx
+# html-to-docx
 
 一个简单方式实现html转docx。
 
@@ -19,6 +19,8 @@
     <version>1.0.0</version>
 </dependency>
 ```
+
+或者从发行版下载jar包添加到你项目的依赖中
 
 然后，添加下面简单的的测试代码即可
 
