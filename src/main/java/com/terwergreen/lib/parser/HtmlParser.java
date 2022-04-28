@@ -20,12 +20,12 @@ import java.util.List;
 /**
  * HTML parser
  *
- * @name: HTMLParser
+ * @name: HtmlParser
  * @author: terwer
  * @date: 2022-04-27 13:31
  **/
-public class HTMLParser {
-    private static final Logger logger = LoggerFactory.getLogger(HTMLParser.class);
+public class HtmlParser {
+    private static final Logger logger = LoggerFactory.getLogger(HtmlParser.class);
 
     /**
      * Parse  html document to docx document
@@ -40,7 +40,7 @@ public class HTMLParser {
 
         //create paragraph
         for (Element e : es) {
-            createXWPFParagraph(doc, e);
+            createXwpfParagraph(doc, e);
         }
 
         logger.info("HTML is parsed successfully.");
@@ -52,13 +52,13 @@ public class HTMLParser {
      * @param doc XWPF document
      * @param e   HTML Element
      */
-    private void createXWPFParagraph(XWPFDocument doc, Element e) {
+    private void createXwpfParagraph(XWPFDocument doc, Element e) {
         // Save styles
         List<String> allStyles = new ArrayList<>();
         // Default no endline
         XWPFParagraph paragraph = null;
         // Create content and set style
-        createXWPFRun(doc, paragraph, e, allStyles);
+        createXwpfRun(doc, paragraph, e, allStyles);
     }
 
     /**
@@ -69,7 +69,7 @@ public class HTMLParser {
      * @param e         HTML Element
      * @param allStyles style
      */
-    private void createXWPFRun(XWPFDocument doc, XWPFParagraph paragraph, Element e, List<String> allStyles) {
+    private void createXwpfRun(XWPFDocument doc, XWPFParagraph paragraph, Element e, List<String> allStyles) {
         List<Node> nodes = e.childNodes();
         if (CollectionUtils.isNotEmpty(nodes)) {
             for (Node node : nodes) {
@@ -111,7 +111,7 @@ public class HTMLParser {
 
                     // loop
                     if (CollectionUtils.isNotEmpty(child.childNodes())) {
-                        createXWPFRun(doc, paragraph, child, allStyles);
+                        createXwpfRun(doc, paragraph, child, allStyles);
                     }
                 }
             }
