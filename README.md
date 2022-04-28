@@ -20,6 +20,8 @@ Include lib to you `pom.xml`
 </dependency>
 ```
 
+or download jatr lib from releases and add to your project's lib path
+
 Then, write a simple code here
 
 ## linux/macOS

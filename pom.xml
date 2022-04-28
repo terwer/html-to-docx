@@ -5,7 +5,7 @@
 
     <groupId>html-to-docx</groupId>
     <artifactId>html-to-docx</artifactId>
-    <version>1.0.0-alpha</version>
+    <version>1.0.0-beta</version>
 
     <name>html-to-docx</name>
     <url>http://www.terwergreen.com</url>
